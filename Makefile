@@ -1,6 +1,6 @@
 TARGET:= toolset
 
-SRCDIR:= lib/ src/
+SRCDIR:= lib/ src/ cdecl/
 OBJDIR:= .objs/
 OUTDIR:=
 INSTALL_DIR:= /usr/local/bin

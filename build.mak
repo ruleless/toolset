@@ -31,9 +31,9 @@ all: $(OUTDIR)$(TARGET) $(_all)
 
 $(OUTDIR)$(TARGET): $(OBJS)
 ifeq ($(CPP_OBJS),)
-	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
+	$(CC) -o $@ $^ $(LIBS) $(LDFLAGS)
 else
-	$(CXX) $(LDFLAGS) -o $@ $^ $(LIBS)
+	$(CXX) -o $@ $^ $(LIBS) $(LDFLAGS)
 endif
 
 $(C_OBJS):$(OBJDIR)%.o:%.c
